@@ -1,13 +1,10 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
 
-        ans = []
+        ans = [""] * numRows
         step = 1
         reverse = True
         fin = ""
-        
-        for y in range(numRows):
-            ans.append("")
         
         for i in range(len(s)):
             if step == 1 and reverse == 1:
